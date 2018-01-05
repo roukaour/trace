@@ -1,0 +1,120 @@
+[
+Cornell box
+http://www.graphics.cornell.edu/online/box/data.html
+]
+
+image 360 360
+image 500 500
+depth 6
+distribute 16
+
+camera
+	eye 0 0 -800
+	look 0 0 0
+	up 0 1 0
+	screen .025 .025
+	fov 39
+end
+
+background 0 0 0
+ambient 1 1 1
+
+[ ceiling light ]
+light
+	pos 0 275 280
+	color 1 1 1
+	diffuse 1
+	specular 1
+	radius 120
+end
+sphere
+	pos 0 275 280
+	radius 60
+	ambient 1 1 1
+	shadowless
+end
+
+[ used for the floor, ceiling, and back wall ]
+material plaster
+	ambient .1 .1 .1
+	diffuse .75 .75 .75
+	specular 0 0 0
+	shininess 10
+end
+
+[ floor ]
+plane
+	normal 0 1 0
+	distance 275
+	use plaster
+	scale 550
+end
+
+[ ceiling ]
+plane
+	normal 0 -1 0
+	distance 275
+	use plaster
+	shadowless
+	scale 550
+end
+
+[ back wall ]
+plane
+	normal 0 0 -1
+	distance 560
+	use plaster
+	scale 550
+end
+
+[ front wall, behind camera ]
+plane
+	normal 0 0 1
+	distance 1000
+	ambient .1 .1 .1
+	diffuse .9 .9 .9
+	specular 0 0 0
+	scale 550
+end
+
+[ right wall, green ]
+plane
+	normal 1 0 0
+	distance 275
+	ambient 0 .2 0
+	diffuse 0 .8 0
+	specular 0 0 0
+	scale 550
+end
+
+[ left wall, red ]
+plane
+	normal -1 0 0
+	distance 275
+	ambient .2 0 0
+	diffuse .8 0 0
+	specular 0 0 0
+	scale 550
+end
+
+[ little sphere, blue ]
+sphere
+	pos -90 -190 170
+	radius 50
+	ambient 0 0 .1
+	diffuse 0 0 .75
+	specular 1 1 1
+	shininess 30
+end
+
+[ big sphere, teal ]
+sphere
+	pos 90 -110 350
+	radius 80
+	ambient 0 .1 .05
+	diffuse 0 .75 .375
+	specular 1 1 1
+	shininess 10
+	reflect 0 .5 .25
+	gloss .25
+end

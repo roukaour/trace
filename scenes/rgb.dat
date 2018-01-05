@@ -1,0 +1,174 @@
+image 960 540
+image 640 360
+depth 2
+refresh 1000
+distribute 9
+
+camera
+	eye -120 140 -160
+	look 0 -15 5
+	up 0 1 0
+	screen 320 180
+	fov 80
+	aperture 10
+end
+
+ambient .1 .1 .1
+light pos -80 80 -160 color 1 1 1 diffuse 1 specular 1 end
+
+plane normal 1 0 0 distance 170 ambient 0 .25 .25 diffuse 0 .25 .25 specular .25 .25 .25 shininess 10 end [ left wall, teal ]
+plane normal -1 0 0 distance 170 ambient .25 0 0 diffuse .25 0 0 specular .25 .25 .25 shininess 10 end [ right wall, maroon ]
+plane normal 0 1 0 distance 170 ambient .25 0 .25 diffuse .25 0 .25 specular .25 .25 .25 shininess 10 end [ floor, purple ]
+plane normal 0 -1 0 distance 170 ambient 0 .25 0 diffuse 0 .25 0 specular .25 .25 .25 shininess 10 end [ ceiling, green ]
+plane normal 0 0 1 distance 170 ambient .25 .25 0 diffuse .25 .25 0 specular .25 .25 .25 shininess 10 end [ back wall, olive ]
+plane normal 0 0 -1 distance 170 ambient 0 0 .25 diffuse 0 0 .25 specular .25 .25 .25 shininess 10 end [ front wall, navy ]
+
+sphere pos -50 -50 -50 ambient 0 0 0 diffuse 0 0 0 specular 1 1 1 shininess 30 radius 10 end [ black ]
+sphere pos -50 -50 -25 ambient 0 0 .25 diffuse 0 0 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 -50 0 ambient 0 0 .5 diffuse 0 0 .5 specular 1 1 1 shininess 30 radius 10 end [ navy ]
+sphere pos -50 -50 25 ambient 0 0 .75 diffuse 0 0 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 -50 50 ambient 0 0 1 diffuse 0 0 1 specular 1 1 1 shininess 30 radius 10 end [ blue ]
+
+sphere pos -50 -25 -50 ambient 0 .25 0 diffuse 0 .25 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 -25 -25 ambient 0 .25 .25 diffuse 0 .25 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 -25 0 ambient 0 .25 .5 diffuse 0 .25 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 -25 25 ambient 0 .25 .75 diffuse 0 .25 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 -25 50 ambient 0 .25 1 diffuse 0 .25 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos -50 0 -50 ambient 0 .5 0 diffuse 0 .5 0 specular 1 1 1 shininess 30 radius 10 end [ green ]
+sphere pos -50 0 -25 ambient 0 .5 .25 diffuse 0 .5 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 0 0 ambient 0 .5 .5 diffuse 0 .5 .5 specular 1 1 1 shininess 30 radius 10 end [ teal ]
+sphere pos -50 0 25 ambient 0 .5 .75 diffuse 0 .5 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 0 50 ambient 0 .5 1 diffuse 0 .5 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos -50 25 -50 ambient 0 .75 0 diffuse 0 .75 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 25 -25 ambient 0 .75 .25 diffuse 0 .75 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 25 0 ambient 0 .75 .5 diffuse 0 .75 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 25 25 ambient 0 .75 .75 diffuse 0 .75 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 25 50 ambient 0 .75 1 diffuse 0 .75 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos -50 50 -50 ambient 0 1 0 diffuse 0 1 0 specular 1 1 1 shininess 30 radius 10 end [ lime ]
+sphere pos -50 50 -25 ambient 0 1 .25 diffuse 0 1 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 50 0 ambient 0 1 .5 diffuse 0 1 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 50 25 ambient 0 1 .75 diffuse 0 1 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -50 50 50 ambient 0 1 1 diffuse 0 1 1 specular 1 1 1 shininess 30 radius 10 end [ cyan ]
+
+sphere pos -25 -50 -50 ambient .25 0 0 diffuse .25 0 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -50 -25 ambient .25 0 .25 diffuse .25 0 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -50 0 ambient .25 0 .5 diffuse .25 0 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -50 25 ambient .25 0 .75 diffuse .25 0 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -50 50 ambient .25 0 1 diffuse .25 0 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos -25 -25 -50 ambient .25 .25 0 diffuse .25 .25 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -25 -25 ambient .25 .25 .25 diffuse .25 .25 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -25 0 ambient .25 .25 .5 diffuse .25 .25 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -25 25 ambient .25 .25 .75 diffuse .25 .25 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 -25 50 ambient .25 .25 1 diffuse .25 .25 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos -25 0 -50 ambient .25 .5 0 diffuse .25 .5 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 0 -25 ambient .25 .5 .25 diffuse .25 .5 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 0 0 ambient .25 .5 .5 diffuse .25 .5 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 0 25 ambient .25 .5 .75 diffuse .25 .5 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 0 50 ambient .25 .5 1 diffuse .25 .5 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos -25 25 -50 ambient .25 .75 0 diffuse .25 .75 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 25 -25 ambient .25 .75 .25 diffuse .25 .75 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 25 0 ambient .25 .75 .5 diffuse .25 .75 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 25 25 ambient .25 .75 .75 diffuse .25 .75 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 25 50 ambient .25 .75 1 diffuse .25 .75 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos -25 50 -50 ambient .25 1 0 diffuse .25 1 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 50 -25 ambient .25 1 .25 diffuse .25 1 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 50 0 ambient .25 1 .5 diffuse .25 1 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 50 25 ambient .25 1 .75 diffuse .25 1 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos -25 50 50 ambient .25 1 1 diffuse .25 1 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 0 -50 -50 ambient .5 0 0 diffuse .5 0 0 specular 1 1 1 shininess 30 radius 10 end [ maroon ]
+sphere pos 0 -50 -25 ambient .5 0 .25 diffuse .5 0 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 -50 0 ambient .5 0 .5 diffuse .5 0 .5 specular 1 1 1 shininess 30 radius 10 end [ purple ]
+sphere pos 0 -50 25 ambient .5 0 .75 diffuse .5 0 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 -50 50 ambient .5 0 1 diffuse .5 0 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 0 -25 -50 ambient .5 .25 0 diffuse .5 .25 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 -25 -25 ambient .5 .25 .25 diffuse .5 .25 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 -25 0 ambient .5 .25 .5 diffuse .5 .25 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 -25 25 ambient .5 .25 .75 diffuse .5 .25 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 -25 50 ambient .5 .25 1 diffuse .5 .25 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 0 0 -50 ambient .5 .5 0 diffuse .5 .5 0 specular 1 1 1 shininess 30 radius 10 end [ olive ]
+sphere pos 0 0 -25 ambient .5 .5 .25 diffuse .5 .5 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 0 0 ambient .5 .5 .5 diffuse .5 .5 .5 specular 1 1 1 shininess 30 radius 10 end [ gray ]
+sphere pos 0 0 25 ambient .5 .5 .75 diffuse .5 .5 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 0 50 ambient .5 .5 1 diffuse .5 .5 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 0 25 -50 ambient .5 .75 0 diffuse .5 .75 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 25 -25 ambient .5 .75 .25 diffuse .5 .75 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 25 0 ambient .5 .75 .5 diffuse .5 .75 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 25 25 ambient .5 .75 .75 diffuse .5 .75 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 25 50 ambient .5 .75 1 diffuse .5 .75 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 0 50 -50 ambient .5 1 0 diffuse .5 1 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 50 -25 ambient .5 1 .25 diffuse .5 1 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 50 0 ambient .5 1 .5 diffuse .5 1 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 50 25 ambient .5 1 .75 diffuse .5 1 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 0 50 50 ambient .5 1 1 diffuse .5 1 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 25 -50 -50 ambient .75 0 0 diffuse .75 0 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -50 -25 ambient .75 0 .25 diffuse .75 0 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -50 0 ambient .75 0 .5 diffuse .75 0 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -50 25 ambient .75 0 .75 diffuse .75 0 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -50 50 ambient .75 0 1 diffuse .75 0 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 25 -25 -50 ambient .75 .25 0 diffuse .75 .25 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -25 -25 ambient .75 .25 .25 diffuse .75 .25 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -25 0 ambient .75 .25 .5 diffuse .75 .25 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -25 25 ambient .75 .25 .75 diffuse .75 .25 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 -25 50 ambient .75 .25 1 diffuse .75 .25 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 25 0 -50 ambient .75 .5 0 diffuse .75 .5 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 0 -25 ambient .75 .5 .25 diffuse .75 .5 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 0 0 ambient .75 .5 .5 diffuse .75 .5 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 0 25 ambient .75 .5 .75 diffuse .75 .5 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 0 50 ambient .75 .5 1 diffuse .75 .5 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 25 25 -50 ambient .75 .75 0 diffuse .75 .75 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 25 -25 ambient .75 .75 .25 diffuse .75 .75 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 25 0 ambient .75 .75 .5 diffuse .75 .75 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 25 25 ambient .75 .75 .75 diffuse .75 .75 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 25 50 ambient .75 .75 1 diffuse .75 .75 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 25 50 -50 ambient .75 1 0 diffuse .75 1 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 50 -25 ambient .75 1 .25 diffuse .75 1 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 50 0 ambient .75 1 .5 diffuse .75 1 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 50 25 ambient .75 1 .75 diffuse .75 1 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 25 50 50 ambient .75 1 1 diffuse .75 1 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 50 -50 -50 ambient 1 0 0 diffuse 1 0 0 specular 1 1 1 shininess 30 radius 10 end [ red ]
+sphere pos 50 -50 -25 ambient 1 0 .25 diffuse 1 0 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 -50 0 ambient 1 0 .5 diffuse 1 0 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 -50 25 ambient 1 0 .75 diffuse 1 0 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 -50 50 ambient 1 0 1 diffuse 1 0 1 specular 1 1 1 shininess 30 radius 10 end [ fuchsia ]
+
+sphere pos 50 -25 -50 ambient 1 .25 0 diffuse 1 .25 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 -25 -25 ambient 1 .25 .25 diffuse 1 .25 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 -25 0 ambient 1 .25 .5 diffuse 1 .25 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 -25 25 ambient 1 .25 .75 diffuse 1 .25 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 -25 50 ambient 1 .25 1 diffuse 1 .25 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 50 0 -50 ambient 1 .5 0 diffuse 1 .5 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 0 -25 ambient 1 .5 .25 diffuse 1 .5 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 0 0 ambient 1 .5 .5 diffuse 1 .5 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 0 25 ambient 1 .5 .75 diffuse 1 .5 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 0 50 ambient 1 .5 1 diffuse 1 .5 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 50 25 -50 ambient 1 .75 0 diffuse 1 .75 0 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 25 -25 ambient 1 .75 .25 diffuse 1 .75 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 25 0 ambient 1 .75 .5 diffuse 1 .75 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 25 25 ambient 1 .75 .75 diffuse 1 .75 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 25 50 ambient 1 .75 1 diffuse 1 .75 1 specular 1 1 1 shininess 30 radius 10 end
+
+sphere pos 50 50 -50 ambient 1 1 0 diffuse 1 1 0 specular 1 1 1 shininess 30 radius 10 end [ yellow ]
+sphere pos 50 50 -25 ambient 1 1 .25 diffuse 1 1 .25 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 50 0 ambient 1 1 .5 diffuse 1 1 .5 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 50 25 ambient 1 1 .75 diffuse 1 1 .75 specular 1 1 1 shininess 30 radius 10 end
+sphere pos 50 50 50 ambient 1 1 1 diffuse 1 1 1 specular 1 1 1 shininess 30 radius 10 end [ white ]

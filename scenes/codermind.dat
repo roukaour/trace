@@ -1,0 +1,50 @@
+image 640 480
+depth 10
+
+camera
+	screen 640 480
+	eye 320 240 1000
+	look 320 240 0
+	up 0 1 0
+end
+
+sphere
+	pos 233 290 0
+	radius 100
+	diffuse 1 1 0
+	specular 1 1 1
+	shininess 50
+	reflect .5 .5 .5
+end
+
+sphere
+	pos 407 290 0
+	radius 100
+	diffuse 0 1 1
+	specular 1 1 1
+	shininess 50
+	reflect .5 .5 .5
+end
+
+sphere
+	pos 320 140 0
+	radius 100
+	diffuse 1 0 1
+	specular 1 1 1
+	shininess 50
+	reflect .5 .5 .5
+end
+
+light
+	pos 0 240 100
+	color 1 1 1
+	diffuse 1
+	specular 1
+end
+
+light
+	pos 640 240 10000
+	color .6 .7 1
+	diffuse 1
+	specular 1
+end

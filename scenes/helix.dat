@@ -1,0 +1,101 @@
+image 512 512
+depth 6
+distribute 2
+
+ambient 1 1 1
+
+camera
+	eye 0 0 -170
+	look 0 0 0
+	up 0 1 0
+	fov 70
+end
+
+light
+	pos 0 130 -160
+	color 1 1 1
+	diffuse 1
+	specular 1
+	radius 10
+end
+
+light
+	pos -130 0 -160
+	color 1 1 1
+	diffuse 1
+	specular 1
+	radius 10
+end
+
+material plaster
+	ambient .02 .02 .09
+	diffuse .2 .2 .8
+	reflect .2 .2 .2
+	gloss .5
+end
+
+plane use plaster normal 0 1 0 distance 140 end [ floor ]
+plane use plaster normal 0 -1 0 distance 140 end [ ceiling ]
+plane use plaster normal 1 0 0 distance 140 end [ right ]
+plane use plaster normal -1 0 0 distance 140 end [ left ]
+plane use plaster normal 0 0 -1 distance 970 end [ back ]
+plane use plaster normal 0 0 1 distance 171 end [ front ]
+
+material helix
+	ambient 0 .1 0
+	diffuse 0 .25 0
+	reflect .25 .75 .25
+end
+
+sphere use helix pos 100.0 0.0 0 radius 30 end
+sphere use helix pos 82.0 57.23635208501674 30 radius 30 end
+sphere use helix pos 34.48 93.86761741942745 60 radius 30 end
+sphere use helix pos -25.452799999999996 96.70654048284429 90 radius 30 end
+sphere use helix pos -76.222592 64.73110897243716 120 radius 30 end
+sphere use helix pos -99.55225088 9.452478231952652 150 radius 30 end
+sphere use helix pos -87.04309944319998 -49.22904467203482 180 radius 30 end
+sphere use helix pos -43.19843220684799 -90.18811149408972 210 radius 30 end
+sphere use helix pos 16.197670623969305 -98.67945817827236 240 radius 30 end
+sphere use helix pos 69.76261203015764 -71.64619991827692 270 radius 30 end
+sphere use helix pos 98.21301310548922 -18.820309687701783 300 radius 30 end
+sphere use helix pos 91.30672946284467 40.780892030446 330 radius 30 end
+sphere use helix pos 51.530023213576015 85.70097261763321 360 radius 30 end
+sphere use helix pos -6.797491392580015 99.76870306247245 390 radius 30 end
+sphere use helix pos -62.677909097407166 77.91970040482165 420 radius 30 end
+sphere use helix pos -95.99427952716782 28.019605601435043 450 radius 30 end
+sphere use helix pos -94.75270932714804 -31.967547218468194 480 radius 30 end
+sphere use helix pos -59.400163769354954 -80.44638303972287 510 radius 30 end
+sphere use helix pos -2.663559254594069 -99.96452096667731 540 radius 30 end
+sphere use helix pos 55.03192659182068 -83.49543134562789 570 radius 30 end
+sphere use helix pos 92.91591886517998 -36.96798644015242 600 radius 30 end
+sphere use helix pos 97.35018034707446 22.867933583777926 630 radius 30 end
+sphere use helix pos 66.73837690402212 74.47139751754821 660 radius 30 end
+sphere use helix pos 12.100757775521819 99.26515834500114 690 radius 30 end
+sphere use helix pos -46.89313415216635 88.32346216825363 720 radius 30 end
+sphere use helix pos -89.00549778507461 45.5853196109348 750 radius 30 end
+sphere use helix pos -99.07588221535602 -13.563538006320558 780 radius 30 end
+sphere use helix pos -73.47894904810934 -67.82952194130038 810 radius 30 end
+sphere use helix pos -21.42959422354328 -97.67687797741225 840 radius 30 end
+sphere use helix pos 38.334414521498374 -92.36055794165567 870 radius 30 end
+sphere use helix pos 84.29803403880061 -53.79443704690304 900 radius 30 end
+sphere use helix pos 99.91436130213461 4.137681184734683 930 radius 30 end
+
+[
+
+import math
+
+def angle(r, d):
+	a = b = d
+	c = 2 * r
+	return math.acos((c**2 - a**2 - b**2) / (-2*a*b))
+
+def helix(n, r, d):
+	a = 0
+	for i in range(n):
+		x = d * math.cos(a)
+		y = d * math.sin(a)
+		z = i * r
+		print("sphere use helix pos {0} {1} {2} radius {3} end".format(x, y, z, r))
+		a += angle(r, d)
+
+]

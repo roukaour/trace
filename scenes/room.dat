@@ -1,0 +1,55 @@
+image 400 400
+depth 4
+distribute 36
+
+camera
+	eye 0 2.5 -10
+	look 0 0 0
+	up 0 1 0
+	screen 10 10
+end
+
+light
+	pos 10 10 -10
+	color 1 1 1
+	diffuse 1
+	specular 1
+	radius 5
+end
+
+light
+	pos -10 5 -25
+	color 1 1 1
+	diffuse 1
+	specular 1
+end
+
+plane
+	ambient .1 .1 .1
+	diffuse .5 0 .5
+	specular .5 .5 .5
+	normal 0 1 0
+	distance 1.5
+	scale 10
+	reflect .67 .67 .67
+	gloss .5
+end
+
+sphere
+	pos 0 0 0
+	radius 1.5
+	ambient .1 .1 .1
+	diffuse .5 .5 0
+	specular .5 .5 .5
+	shininess 15
+	reflect .25 .25 .25
+end
+
+triangle
+	v1 -.5 0 -4
+	v2 1 3 -4
+	v3 2.5 0 -4
+	transmit .75 1 1
+	ior 1.5
+	translucency .25
+end

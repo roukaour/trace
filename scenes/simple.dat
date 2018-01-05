@@ -1,0 +1,80 @@
+image 400 400
+depth 5
+distribute 16
+
+background 0 0 0
+ambient .5 .5 .5
+
+camera
+	eye 0 25 -100
+	look 0 0 0
+	up 0 1 0
+	screen 100 100
+	fov 40
+end
+
+light
+	pos 0 50 -100
+	color 1 1 1
+	diffuse 1
+	specular 1
+	radius 5
+end
+
+light
+	pos 0 10 100
+	color 1 1 1
+	diffuse 1
+	specular 1
+end
+
+plane
+	ambient .5 .5 .5
+	diffuse .5 .5 .5
+	normal 0 1 0
+	distance 100
+end
+
+sphere
+	pos 20 0 20
+	radius 10
+	diffuse .5 .75 1
+	specular .5 .75 1
+	reflect .5 .5 .5
+	shininess 40
+	gloss .25
+end
+
+sphere
+	pos -20 0 -20
+	radius 10
+	diffuse .5 1 .5
+	specular .5 1 .5
+	reflect .5 .5 .5
+	shininess 40
+	gloss .25
+end
+
+triangle
+	diffuse 1 0 1
+	specular 1 0 1
+	v2 -15 -20 30
+	v1 -15 20 30
+	v3 15 0 -30
+end
+
+triangle
+	diffuse 1 1 0
+	specular 1 1 0
+	v1 -15 -20 30
+	v2 -15 20 30
+	v3 15 0 -30
+end
+
+[ triangle
+	diffuse .5 .5 1
+	specular .5 .5 1
+	v1 15 -20 -30
+	v3 15 20 -30
+	v2 -15 0 30
+end ]

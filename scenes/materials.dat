@@ -1,0 +1,362 @@
+[
+material coefficients from:
+http://globe3d.sourceforge.net/g3d_html/gl-materials__ads.htm
+]
+
+image 375 450
+depth 2
+distribute 4
+refresh 1000
+
+camera
+	eye 2 2.5 -10
+	look 2 2.5 0
+	up 0 -1 0
+	screen 5 6
+end
+
+[ lights ]
+
+ambient 1 1 1
+
+light
+	pos 2 2.5 -5
+	color 1 1 1
+	diffuse .5
+	specular .5
+end
+
+[ background ]
+plane
+	normal 0 0 -1
+	distance .8
+	ambient .2 .2 .2
+	diffuse .2 .2 .2
+	specular .2 .2 .2
+end
+
+[ foreground (behind camera) ]
+plane
+	normal 0 0 1
+	distance 20
+	ambient .2 .2 .2
+	diffuse .2 .2 .2
+	specular .2 .2 .2
+end
+
+[ red ]
+sphere
+	pos 0 0 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse 1.0 .0 .0
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ orange ]
+sphere
+	pos 1 0 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .992157 .513726 .0
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ yellow ]
+sphere
+	pos 2 0 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse 1.0 .964706 .0
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ green ]
+sphere
+	pos 3 0 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .0 1.0 .0
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ indigo ]
+sphere
+	pos 4 0 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .0980392 .0 .458824
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ blue ]
+sphere
+	pos 0 1 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .0 .0 1.0
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ violet ]
+sphere
+	pos 1 1 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .635294 .0 1.0
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ black ]
+sphere
+	pos 2 1 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .0 .0 .0
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ white ]
+sphere
+	pos 3 1 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .992157 .992157 .992157
+	specular .0225 .0225 .0225
+	shininess 12.8
+end
+
+[ glass ]
+sphere
+	pos 4 1 0
+	radius .4
+	ambient .0 .0 .0
+	[ diffuse .588235 .670588 .729412 ]
+	specular .9 .9 .9
+	shininess 96.0
+	reflect .9 .9 .9
+	transmit .588235 .670588 .729412
+	ior 1.5
+end
+
+[ brass ]
+sphere
+	pos 0 2 0
+	radius .4
+	ambient .329412 .223529 .027451
+	diffuse .780392 .568627 .113725
+	specular .992157 .941176 .807843
+	shininess 27.8974
+end
+
+[ bronze ]
+sphere
+	pos 1 2 0
+	radius .4
+	ambient .2125 .1275 .054
+	diffuse .714 .4284 .18144
+	specular .393548 .271906 .166721
+	shininess 25.6
+end
+
+[ polished bronze ]
+sphere
+	pos 2 2 0
+	radius .4
+	ambient .25 .148 .06475
+	diffuse .4 .2368 .1036
+	specular .774597 .458561 .200621
+	shininess 76.8
+	reflect .774597 .458561 .200621
+end
+
+[ chrome ]
+sphere
+	pos 3 2 0
+	radius .4
+	ambient .25 .25 .25
+	diffuse .4 .4 .4
+	specular .774597 .774597 .774597
+	shininess 76.8
+	reflect .774597 .774597 .774597
+end
+
+[ copper ]
+sphere
+	pos 4 2 0
+	radius .4
+	ambient .19125 .0735 .0225
+	diffuse .7038 .27048 .0828
+	specular .256777 .137622 .086014
+	shininess 12.8
+end
+
+[ polished copper ]
+sphere
+	pos 0 3 0
+	radius .4
+	ambient .2295 .08825 .0275
+	diffuse .5508 .2118 .066
+	specular .580594 .223257 .0695701
+	shininess 51.2
+	reflect .580594 .223257 .0695701
+end
+
+[ gold ]
+sphere
+	pos 1 3 0
+	radius .4
+	ambient .24725 .1995 .0745
+	diffuse .75164 .60648 .22648
+	specular .628281 .555802 .366065
+	shininess 51.2
+end
+
+[ polished gold ]
+sphere
+	pos 2 3 0
+	radius .4
+	ambient .24725 .2245 .0645
+	diffuse .34615 .3143 .0903
+	specular .797357 .723991 .208006
+	shininess 83.2
+	reflect .797357 .723991 .208006
+end
+
+[ pewter ]
+sphere
+	pos 3 3 0
+	radius .4
+	ambient .105882 .058824 .113725
+	diffuse .427451 .470588 .541176
+	specular .333333 .333333 .521569
+	shininess 9.84615
+end
+
+[ silver ]
+sphere
+	pos 4 3 0
+	radius .4
+	ambient .19225 .19225 .19225
+	diffuse .50754 .50754 .50754
+	specular .508273 .508273 .508273
+	shininess 51.2
+end
+
+[ polished silver ]
+sphere
+	pos 0 4 0
+	radius .4
+	ambient .23125 .23125 .23125
+	diffuse .2775 .2775 .2775
+	specular .773911 .773911 .773911
+	shininess 89.6
+	reflect .773911 .773911 .773911
+end
+
+[ emerald ]
+sphere
+	pos 1 4 0
+	radius .4
+	ambient .0215 .1745 .0215
+	diffuse .07568 .61424 .07568
+	specular .633 .727811 .633
+	shininess 76.8
+	transmit .633 .727811 .633
+	ior 1.5
+	reflect .633 .727811 .633
+end
+
+[ jade ]
+sphere
+	pos 2 4 0
+	radius .4
+	ambient .135 .2225 .1575
+	diffuse .54 .89 .63
+	specular .316228 .316228 .316228
+	shininess 12.8
+	reflect .316228 .316228 .316228 gloss .25
+end
+
+[ obsidian ]
+sphere
+	pos 3 4 0
+	radius .4
+	ambient .05375 .05 .06625
+	diffuse .18275 .17 .22525
+	specular .332741 .328634 .346435
+	shininess 38.4
+	reflect .332741 .328634 .346435
+end
+
+[ pearl ]
+sphere
+	pos 4 4 0
+	radius .4
+	ambient .25 .20725 .20725
+	diffuse 1.0 .829 .829
+	specular .296648 .296648 .296648
+	shininess 11.264
+	reflect .296648 .296648 .296648 gloss .33
+end
+
+[ ruby ]
+sphere
+	pos 0 5 0
+	radius .4
+	ambient .1745 .01175 .01175
+	diffuse .61424 .04136 .04136
+	specular .727811 .626959 .626959
+	shininess 76.8
+	transmit .727811 .626959 .626959
+	ior 1.5
+	reflect .727811 .626959 .626959
+end
+
+[ turquoise ]
+sphere
+	pos 1 5 0
+	radius .4
+	ambient .1 .18725 .1745
+	diffuse .396 .74151 .69102
+	specular .297254 .30829 .306678
+	shininess 12.8
+end
+
+[ black plastic ]
+sphere
+	pos 2 5 0
+	radius .4
+	ambient .0 .0 .0
+	diffuse .01 .01 .01
+	specular .50 .50 .50
+	shininess 32.0
+end
+
+[ black rubber ]
+sphere
+	pos 3 5 0
+	radius .4
+	ambient .02 .02 .02
+	diffuse .01 .01 .01
+	specular .4 .4 .4
+	shininess 1.0
+end
+
+[ VRML default ]
+sphere
+	pos 4 5 0
+	radius .4
+	ambient .2 .2 .2
+	diffuse .8 .8 .8
+	specular .0 .0 .0
+	shininess 25.6
+end

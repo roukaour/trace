@@ -1,0 +1,56 @@
+image 600 600
+depth 4
+distribute 16
+
+ambient 1 1 1
+
+camera
+	eye 0 1 -10
+	look 0 0 1
+	up 0 1 0
+	fov 45
+end
+
+light
+	pos -10 15 -15
+	color 1 1 1
+end
+
+plane
+	normal 0 1 0
+	distance 6
+	ambient .08 .08 .12
+	diffuse .6 .6 .8
+end
+
+material chrome
+	ambient .1 .1 .1
+	reflect .9 .9 .9
+end
+
+sphere
+	pos 3 0 10
+	radius 3
+	use chrome
+end
+
+sphere
+	pos -4 0 10
+	radius 1.5
+	use chrome
+	gloss 0
+end
+
+sphere
+	pos -4 4 10
+	radius 1.5
+	use chrome
+	gloss .15
+end
+
+sphere
+	pos -4 -4 10
+	radius 1.5
+	use chrome
+	gloss .45
+end

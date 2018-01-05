@@ -1,0 +1,54 @@
+image 350 350
+depth 2
+
+camera
+	eye 200 20 0
+	look 25 0 100
+	up 0 1 0
+	fov 25
+end
+
+ambient .25 .25 .25
+
+light
+	pos -20 30 70
+	color 1 1 1
+	diffuse 1
+	specular 1
+end
+
+plane
+	normal 0 1 0
+	distance 50
+	ambient .5 .5 .5
+	diffuse .5 .5 .5
+end
+
+plane
+	normal 0 -1 0
+	distance 100
+	ambient .25 .25 .25
+	diffuse .5 .5 .5
+end
+
+sphere
+	pos 0 0 100
+	radius 20
+	ambient 0 .25 .125
+	specular 1 1 1
+	shininess 5
+	transmit 0 1 .5
+	ior 1.5
+	reflect 0 .5 .25
+end
+
+sphere
+	pos 50 0 100
+	radius 15
+	specular 1 1 1
+	shininess 10
+	ambient .25 .125 .25
+	transmit 1 .5 1
+	ior 1.05
+	reflect .5 .25 .5
+end
